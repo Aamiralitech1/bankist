@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <section class="container">
+        <button class="btn">Click Me</button>
+        <div class="tapped">
+            <ion-icon name="close-outline" class="close"></ion-icon>
+            <h2 class="heading">Fill Below Form To Reach Us</h2>
+            <div class="form--data">
+                <form class="form" action="#">
+
+                    <label for="username">Username</label>
+                    <input id="username" type="text" placeholder="Username" required>
+
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="username@example.com">
+
+
+                    <label for="number">Contact</label>
+                    <input id="number" type="text" placeholder="+91 858785896">
+
+                    <button class="form--btn">Send</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="overlay"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
