@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #d6d6d6;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section  */
+/* .logo {
+    margin-left: 2rem;
+} */
+
+.main--nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.car--1 {
+    font-size: 3rem;
+    cursor: pointer;
+    display: inline-block;
+    background: none;
+    outline: none;
+    background: #fb8500;
+    width: 100px;
+    text-align: center;
+
+}
+
+.wash--1 {
+    font-size: 3rem;
+    cursor: pointer;
+    color: rgba(245, 241, 241, 0.815);
+    display: inline-block;
+    background: none;
+    outline: none;
+    background: #180000;
+    width: 150px;
+    text-align: center;
+    margin-left: -2px;
+
+}
+
+.main-header {
+    /* display: flex; */
+    background-image: url(img/car-wash1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    z-index: 50;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    opacity: 90%;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    /* background: rgba(31, 30, 30, 0.5); */
+    background: rgba(253, 249, 249, 0.1);
+    height: 80px;
+    border-radius: 50px;
+    margin-top: 1rem;
+    margin-right: 2.5rem;
+    text-align: center;
+    /* border: 2px solid #fff; */
+
+}
+
+.nav-ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+ul li i {
+    margin-right: 5px;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: rgba(228, 225, 225, 0.815);
+    transition: all 0.5s linear;
+}
+
+
+.nav-ul li {
+    width: 150px;
+    padding: 10px 5px;
+    text-align: center;
+    position: relative;
+    border-radius: 50px;
+    /* border: 1px solid #fb8500; */
+    transition: all 0.3s linear;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.nav-home {
+    background: rgb(128, 126, 126);
+}
+
+.nav-home:hover {
+    background: rgb(128, 126, 126, 0.25);
+}
+
+ul .nav-menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(245, 241, 241, 0.425);
+    /* border: 1px solid #fb8500; */
+    transition: all 0.3s linear;
+    transform: translate(-100%);
+    z-index: -1;
+}
+
+ul .nav-menu:hover::before {
+    transform: translate(0);
+}
+
+.social-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons-social {
+    color: rgba(245, 241, 241, 0.815);
+    font-size: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.icons-social:hover {
+    transform: scale(1.2);
+}
+
+.main-container {
+    width: 60%;
+}
+
+.main-heading {
+    /* border: 2px solid #fff; */
+    display: flex;
+    justify-content: space-between;
+    /* gap: 100px; */
+    width: 90%;
+    /* margin: 5rem 5rem; */
+    margin: 8rem 5rem;
+}
+
+.main-heading h1 {
+    font-size: 3rem;
+    color: rgba(228, 225, 225, 0.815);
+}
+
+.main-heading h1 span {
+    background: rgba(245, 241, 241, 0.678);
+    padding: 5px;
+    font-size: 3rem;
+    border-end-start-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #180000;
+}
+
+
+.heading--para {
+    font-size: 1.5rem;
+    color: rgba(245, 241, 241, 0.815);
+    margin-top: 25px;
+}
+
+.inquire {
+    width: 35%;
+    margin-top: 20px;
+}
+
+.car {
+    width: 700px;
+}
+
+.btn {
+    width: 100%;
+    padding: 1.1rem;
+    color: rgba(245, 241, 241, 0.815);
+    background: none;
+    border: none;
+    outline: none;
+    border: 1px solid rgba(245, 241, 241, 0.815);
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: all 0.3s linear;
+    z-index: 1;
+    margin-top: 2rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    letter-spacing: 2px;
+}
+
+.btn:hover {
+    color: rgba(245, 241, 241, 0.815);
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s linear;
+    transform: translateY(-100%);
+    z-index: -1;
+}
+
+.btn:hover::before {
+    transform: translateY(0);
+    background: rgba(245, 241, 241, 0.425);
+}
+
+/* Hidden Form Section */
+
+.form--container {
+    height: 30.5rem;
+    width: 30.5rem;
+    /* background: rgba(245, 241, 241); */
+    background: rgba(175, 172, 172, 0.452);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    padding: 40px;
+    z-index: 30;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-h2 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    color: rgba(245, 241, 241, 0.815);
+
+}
+
+.form-main {
+    background: rgb(128, 126, 126);
+    margin: 0 10px 10px 10px;
+    padding: 10px;
+    border-radius: 9px;
+}
+
+
+.form-main div input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    background: rgba(190, 180, 180, 0.932);
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-main div label {
+    font-size: 1.2rem;
+    color: rgba(245, 241, 241, 0.815);
+    letter-spacing: 1px;
+}
+
+
+.form-main div {
+    margin-bottom: 1rem;
+}
+
+.btn--1 {
+    display: flex;
+    justify-content: center;
+}
+
+.btn--form {
+    width: 250px;
+    padding: 1.2rem;
+    border-radius: 9px;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    background: rgb(0, 0, 0);
+    color: rgba(245, 241, 241, 0.815);
+    text-transform: uppercase;
+}
+
+.btn--form:hover {
+    background: rgba(53, 52, 52, 0.815);
+}
+
+.form--close {
+    position: absolute;
+    font-size: 2.2rem;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: rgba(190, 180, 180, 0.932);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    transition: all 0.5s ease-in-out;
+}
+
+/* .hidden {
+    opacity: 0;
+    display: none;
+} */
+
+
+/* Assuming .form--container and .overlay start off as hidden */
+.form--container,
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.3s;
+    /* Hide visibility at the end of the opacity transition */
+}
+
+/* You can control the visibility by toggling a class like .visible */
+.form--container.visible,
+.overlay.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Image Sliders */
+
+.slideshow {
+    width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+}
+
+/* SERVICES BLOCK */
+
+.service--main {
+    height: 450px;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3.5rem;
+}
+
+.card {
+    border: 1px solid;
+    width: 400px;
+}

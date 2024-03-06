@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+
+        <div class="main--nav">
+            <div class="logo">
+                <span class="car--1">Car</span>
+                <span class="wash--1">Wash</span>
+            </div>
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-home"><a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </a></li>
+                    <li class="nav-menu"><a href="#">
+                            <i class="fa fa-wrench" aria-hidden="true"></i>
+                            <span>Services</span>
+                        </a></li>
+                    <li class="nav-menu"><a href="#">
+                            <i class="fa fa-address-book" aria-hidden="true"></i>
+                            <span>Contact us</span>
+                        </a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="main-heading">
+            <div class="main-container">
+                <h1 class="heading">No 1 car <span class="heading--h1--span">cleaning</span> service</h1>
+                <p class="heading--para">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam inventore assumenda quis,
+                    accusantium iusto repudiandae voluptates. Dolores consequuntur minus nobis?
+                </p>
+                <div class="inquire">
+                    <button class="btn">Book Now</button>
+                </div>
+            </div>
+
+            <div class="social-logo">
+                <ion-icon class="icons-social" name="logo-facebook"></ion-icon>
+                <ion-icon class="icons-social" name="logo-whatsapp"></ion-icon>
+                <ion-icon class="icons-social" name="logo-instagram"></ion-icon>
+            </div>
+        </div>
+
+        <div class="form--container hidden">
+            <ion-icon class="form--close" name="close-outline"></ion-icon>
+            <div class="form-main">
+                <h2 class="form-h2">Book Your Service</h2>
+                <form action="#">
+                    <div>
+                        <label for="username">Username</label>
+                        <input id="username" type="text" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input id="email" type="text" placeholder="username@example.com" required>
+                    </div>
+                    <div>
+                        <label for="number">Contac Number</label>
+                        <input id="number" type="text" placeholder="+91 785785958" required>
+                    </div>
+                    <div class="btn--1">
+                        <button class="btn--form">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="overlay hidden"></div>
+    </header>
+
+    <section class="service--main container">
+        <h2>Services</h2>
+        <figure class="card">
+            <img src="" alt="card-1">
+            <div class="service--text">
+                <h2 class="service--heading">BASIC</h2>
+                <ul>
+                    <li>Exterior car cleaning</li>
+                    <li>Interior dusting</li>
+                </ul>
+            </div>
+        </figure>
+
+        <figure class="card">
+            <img src="" alt="card-1">
+            <div class="service--text">
+                <h2 class="service--heading">ADVANCE</h2>
+                <ul>
+                    <li>Exterior car cleaning</li>
+                    <li>Interior dusting</li>
+                    <li>Complete interior vacuuming and polishing</li>
+                    <li>Glass cleaning and polishing</li>
+                    <li>Tyre cleaning and polishing</li>
+                </ul>
+            </div>
+        </figure>
+
+        <figure class="card">
+            <img src="" alt="card-1">
+            <div class="service--text">
+                <h2 class="service--heading">DEEP CLEANING</h2>
+                <ul>
+                    <li>Exterior car cleaning</li>
+                    <li>Interior wet shampooing and detailing</li>
+                    <li>Interior vacuuming</li>
+                    <li>Tyre cleaning and polishing</li>
+                    <li>Glass cleaning and polishing</li>
+                </ul>
+            </div>
+        </figure>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
