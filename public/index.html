@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNS Record Checker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>DNS Record Checker</h1>
+        <form>
+            <input type="text" name="hostname" placeholder="Enter hostname" required>
+            <select name="recordType">
+                <option value="A">A</option>
+                <option value="AAAA">AAAA</option>
+                <option value="MX">MX</option>
+                <option value="TXT">TXT</option>
+                <option value="SRV">SRV</option>
+                <option value="PTR">PTR</option>
+                <option value="NS">Nameserver</option>
+                <option value="RDNS">RDNS</option>
+            </select>
+            <button type="submit circle-animation">Check</button>
+        </form>
+
+    </div>
+    <footer>
+        <p>©️ Copyright since 2023 all rights reserved</p>
+    </footer>
+
+
+
+    <script src="js/script.js" defer></script>
+</body>
+
+</html>

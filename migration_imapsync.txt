@@ -1,0 +1,13 @@
+{ while IFS=';' read  u1 p1 u2 p2
+    do
+        { echo "$u1" | egrep "^#" ; } > /dev/null && continue # this skips commented lines in list1.txt
+        echo "==== Syncing user $u1 to user $u2 ===="
+
+        imapsync --host1 199.79.63.79 --addheader --user1  "$u1" --password1 "$p1" --ssl1 \
+                 --host2 176.223.132.227 --user2 "$u2" --password2 "$p2" --ssl2
+
+        echo "==== End syncing user $u1 to user $u2 ===="
+
+        echo
+    done
+} < list1.txt

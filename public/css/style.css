@@ -1,0 +1,194 @@
+body,
+html {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    /* Adjusted to use imported font */
+    margin: 0;
+    padding: 0;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    background: rgb(47, 36, 36);
+    background: linear-gradient(354deg, rgba(47, 36, 36, 1) 0%, rgba(102, 49, 36, 1) 0%, rgba(144, 39, 41, 1) 0%, rgba(157, 36, 42, 1) 0%, rgba(42, 64, 30, 1) 1%, rgba(102, 121, 110, 1) 100%);
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    /* Slightly transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 30%;
+    /* Adjust based on your preference */
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+input {
+    width: 90%;
+    font-size: 18px;
+}
+
+select {
+    font-size: 18px;
+}
+
+input:focus {}
+
+
+button {
+    cursor: pointer;
+    background-color: #000000;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    width: 20%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.record {
+    background-color: #f9f9f9;
+    /* Lighter background for contrast */
+    border: 1px solid #e0e0e0;
+    /* Softer border color */
+    padding: 15px;
+    /* More padding for content */
+    margin-bottom: 15px;
+    /* Increase spacing between records */
+    border-radius: 8px;
+    /* Rounded corners */
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow for depth */
+    transition: transform 0.2s, box-shadow 0.2s;
+    /* Smooth transitions for interactions */
+}
+
+.record:hover {
+    transform: translateY(-2px);
+    /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover for more depth */
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Center the modal more effectively */
+    position: fixed;
+    z-index: 1000;
+    /* Ensure it's above other content */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    /* Scroll only inside the modal */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Darker overlay for better focus on modal */
+    padding: 20px;
+    /* Padding to prevent content from touching the edges */
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    /* Centering for various screen sizes */
+    padding: 20px;
+    border-radius: 12px;
+    /* Rounded corners */
+    border: none;
+    /* Remove border for a cleaner look */
+    width: 60%;
+    /* Optimal width for readability */
+    max-width: 600px;
+    /* Maximum width to maintain layout */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for a floating effect */
+    overflow-y: auto;
+    /* Allow scrolling within the modal */
+    word-wrap: break-word;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.back-link {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    /* Green background */
+    color: white;
+    /* White text */
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    /* Smooth transition for hover effects */
+    text-decoration: none;
+    /* Remove underline from links styled as buttons */
+}
+
+.back-link:hover {
+    background-color: #45a049;
+    /* Darker shade of green */
+    transform: translateY(-2px);
+    /* Slight lift effect */
+}
+
+.back-link:active {
+    transform: translateY(1px);
+    /* Press down effect */
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    color: #646262;
+    font-size: 18px;
+    word-spacing: 1px;
+}

@@ -1,0 +1,72 @@
+/* General body styling with a gradient background */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: #3f3b3b;
+}
+
+/* Styling the container with transparency */
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+    /* This will give a blur effect to the background */
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Email display styling */
+#emailDisplay {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(233, 236, 239, 0.8);
+    /* Slightly transparent */
+    border-radius: 5px;
+    color: #060606;
+    word-break: break-all;
+    font-size: 18px;
+    border: 1px solid #ced4da;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+}
